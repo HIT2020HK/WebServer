@@ -30,4 +30,4 @@ Webbench对服务器进行压力测试，经压力测试可以实现上万的并
 > * 每秒钟传输数据量：13328032 bytes/sec
 > * 所有访问均成功
 
-<div align=center><img src="https://github.com/HIT2020HK/WebServer#%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95" height="201"/> </div>
+<div align=center><img src="https://user-images.githubusercontent.com/86244913/180144660-6116e00a-1d09-4d13-ae74-aecc1ebd6c31.png" height="201"/> </div>
