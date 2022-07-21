@@ -39,7 +39,7 @@ Linux下C++轻量级Web服务器的主要工作：
 - 招生界面
 
 ![图片](https://user-images.githubusercontent.com/86244913/180175690-4a092467-e9b8-43cf-9375-a07068505528.png)
-- 宣传片界面
+- 宣传片界面（视频）
 
 ![图片](https://user-images.githubusercontent.com/86244913/180175779-6788e33c-acad-437d-b070-c135b4b4c011.png)
 
