@@ -14,7 +14,7 @@ Linux下C++轻量级Web服务器的主要工作：
 概述 	框架 	Demo演示 	压力测试 	更新日志 	源码下载 	快速运行 	个性化运行 	庖丁解牛 	CPP11实现 	致谢
 
 # 框架
-![This is an image]（!）
+! [This is an image]（）
 Demo演示
 
         注册演示
