@@ -1,17 +1,15 @@
 
 # WebServer
-
 Linux下C++轻量级Web服务器的主要工作：
-
-    - 使用 线程池 + 非阻塞socket + epoll(ET和LT均实现) + 事件处理(Reactor和模拟Proactor均实现) 的并发模型
-    - 使用状态机解析HTTP请求报文，支持解析GET和POST请求
-    - 访问服务器数据库实现web端用户注册、登录功能，可以请求服务器图片和视频文件
-    - 实现同步/异步日志系统，记录服务器运行状态
-    - 经Webbench压力测试可以实现上万的并发连接数据交换
+- 使用 线程池 + 非阻塞socket + epoll(ET和LT均实现) + 事件处理(Reactor和模拟Proactor均实现) 的并发模型
+- 使用状态机解析HTTP请求报文，支持解析GET和POST请求
+- 访问服务器数据库实现web端用户注册、登录功能，可以请求服务器图片和视频文件
+- 实现同步/异步日志系统，记录服务器运行状态
+- 经Webbench压力测试可以实现上万的并发连接数据交换
 
 
 # 目录
-[框架](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E6%A1%86%E6%9E%B6)   [Demo演示](https://github.com/HIT2020HK/WebServer/blob/web/README.md#demo%E6%BC%94%E7%A4%BA) 	压力测试 	更新日志 快速运行 	个性化运行  致谢
+[框架](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E6%A1%86%E6%9E%B6)   [Demo演示](https://github.com/HIT2020HK/WebServer/blob/web/README.md#demo%E6%BC%94%E7%A4%BA) 	[压力测试](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C) 	更新日志 快速运行 	个性化运行  致谢
 
 # 框架
 ![frame](https://user-images.githubusercontent.com/86244913/180124295-b56ceddc-03bc-465d-b5b0-15f20484c6d6.jpg)
@@ -28,6 +26,7 @@ Linux下C++轻量级Web服务器的主要工作：
         
 # 快速运行
 - 服务器测试环境
+
         Ubuntu版本18.04
         MySQL版本5.7.38
 
@@ -116,26 +115,24 @@ Linux下C++轻量级Web服务器的主要工作：
         
    Proactor，LT + ET，16876 QPS
    
-   ![图片](https://user-images.githubusercontent.com/86244913/180145515-a812a5be-2e3e-45dd-ba10-81a935e37123.png)
+   ![图片](https://user-images.githubusercontent.com/86244913/180148527-28bb3cdd-72f2-45b2-bf78-c48234f440e0.png)
    
    Proactor，ET + LT，17943 QPS
    
-   ![图片](https://user-images.githubusercontent.com/86244913/180145597-be567ac5-225b-4292-b636-d81c1797a04e.png)
+   ![图片](https://user-images.githubusercontent.com/86244913/180148576-8b8ab576-a298-4c57-a70d-ad6c53db8397.png)
     
     Proactor，ET + ET，17428 QPS
     
-   ![图片](https://user-images.githubusercontent.com/86244913/180145685-99d5a22a-ea7b-4734-95e1-1e341ab0eeb6.png)
+   ![图片](https://user-images.githubusercontent.com/86244913/180148617-db9901a9-ddf7-48e7-b1a0-941ae684ac97.png)
    
    Reactor，LT + ET，8624 QPS
    
-   ![图片](https://user-images.githubusercontent.com/86244913/180145777-be056f02-06b9-4509-ba53-34d0f57e5103.png)
+   ![图片](https://user-images.githubusercontent.com/86244913/180148655-e6244b43-e6f0-4799-8684-661c037130db.png)
 
-        并发连接总数：10500
+        并发连接总数：10000
         访问服务器时间：5s
         所有访问均成功
 
-注意： 使用本项目的webbench进行压测时，若报错显示webbench命令找不到，将可执行文件webbench删除后，重新编译即可。
-
 # 致谢
 
-Linux高性能服务器编程，游双著.
+《Linux高性能服务器编程》游双著
