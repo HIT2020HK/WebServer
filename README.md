@@ -1,6 +1,6 @@
 
 # WebServer
-===============
+
 Linux下C++轻量级Web服务器的主要工作：
 - 使用 线程池 + 非阻塞socket + epoll(ET和LT均实现) + 事件处理(Reactor和模拟Proactor均实现) 的并发模型
 - 使用状态机解析HTTP请求报文，支持解析GET和POST请求
@@ -10,15 +10,16 @@ Linux下C++轻量级Web服务器的主要工作：
 
 
 # 目录
-----------
+
 |[框架](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E6%A1%86%E6%9E%B6)|[Demo演示](https://github.com/HIT2020HK/WebServer/blob/web/README.md#demo%E6%BC%94%E7%A4%BA)|[快速运行](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C)|[个性化运行](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E4%B8%AA%E6%80%A7%E5%8C%96%E8%BF%90%E8%A1%8C)  [压力测试](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95)|[致谢](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E8%87%B4%E8%B0%A2)|
+|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 
 # 框架
--------------
+
 ![frame](https://user-images.githubusercontent.com/86244913/180124295-b56ceddc-03bc-465d-b5b0-15f20484c6d6.jpg)
 
 # Demo演示
--------------
+
 
         注册演示
 
@@ -72,53 +73,47 @@ Linux下C++轻量级Web服务器的主要工作：
     ip:9006
     ```
 # 个性化运行
-
+------
+```C++
 ./server [-p port] [-l LOGWrite] [-m TRIGMode] [-o OPT_LINGER] [-s sql_num] [-t thread_num] [-c close_log] [-a actor_model]
+```
 
 - -p，自定义端口号
-
-        默认9006
+     * 默认9006
 - -l，选择日志写入方式，默认同步写入
-
-        0，同步写入
-        1，异步写入
+     * 0，同步写入
+     * 1，异步写入
 - -m，listenfd和connfd的模式组合，默认使用LT + LT
-
-        0，表示使用LT + LT
-        1，表示使用LT + ET
-        2，表示使用ET + LT
-        3，表示使用ET + ET
+     * 0，表示使用LT + LT
+     * 1，表示使用LT + ET
+     * 2，表示使用ET + LT
+     * 3，表示使用ET + ET
 - -o，优雅关闭连接，默认不使用
-
-        0，不使用
-        1，使用
+     * 0，不使用
+     * 1，使用
 - -s，数据库连接数量
-
-        默认为8
+     * 默认为8
 - -t，线程数量
-
-        默认为8
+     * 默认为8
 - -c，关闭日志，默认打开
-
-        0，打开日志
-        1，关闭日志
+     * 0，打开日志
+     * 1，关闭日志
 - -a，选择反应堆模型，默认Proactor
-
-        0，Proactor模型
-        1，Reactor模型
+      * 0，Proactor模型
+      * 1，Reactor模型
 
 测试示例命令与含义
-
+```C++
 ./server -p 9007 -l 1 -m 0 -o 1 -s 10 -t 10 -c 1 -a 1
-
-    端口9007
-    异步写入日志
-    使用LT + LT组合
-    使用优雅关闭连接
-    数据库连接池内有10条连接
-    线程池内有10条线程
-    关闭日志
-    Reactor反应堆模型
+```
+- [x] 端口9007
+- [x] 异步写入日志
+- [x] 使用LT + LT组合
+- [x] 使用优雅关闭连接
+- [x] 数据库连接池内有10条连接
+- [x] 线程池内有10条线程
+- [x] 关闭日志
+- [x] Reactor反应堆模型
 
 # 压力测试
 
