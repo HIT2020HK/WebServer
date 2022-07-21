@@ -9,7 +9,7 @@ Linux下C++轻量级Web服务器的主要工作：
 
 
 # 目录
-[框架](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E6%A1%86%E6%9E%B6)   [Demo演示](https://github.com/HIT2020HK/WebServer/blob/web/README.md#demo%E6%BC%94%E7%A4%BA) 	[压力测试](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C) 	更新日志 快速运行 	个性化运行  致谢
+[框架](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E6%A1%86%E6%9E%B6)   [Demo演示](https://github.com/HIT2020HK/WebServer/blob/web/README.md#demo%E6%BC%94%E7%A4%BA) 	[快速运行](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C)  	[个性化运行](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E4%B8%AA%E6%80%A7%E5%8C%96%E8%BF%90%E8%A1%8C)  [压力测试] 	  致谢
 
 # 框架
 ![frame](https://user-images.githubusercontent.com/86244913/180124295-b56ceddc-03bc-465d-b5b0-15f20484c6d6.jpg)
@@ -29,13 +29,12 @@ Linux下C++轻量级Web服务器的主要工作：
 
         Ubuntu版本18.04
         MySQL版本5.7.38
-
 - 浏览器测试环境
+
         Linux
         FireFox
-
 - 测试前已安装MySQL数据库
-    '
+
     // 建立yourdb库
     create database yourdb;
     // 创建user表
@@ -45,25 +44,20 @@ Linux下C++轻量级Web服务器的主要工作：
         passwd char(50) NULL
     )ENGINE=InnoDB;
     // 添加数据
-    INSERT INTO user(username, passwd) VALUES('name', 'passwd');'
-
+    INSERT INTO user(username, passwd) VALUES('name', 'passwd');
 - 修改main.cpp中的数据库初始化信息
     //数据库登录名,密码,库名
     string user = "root";
     string passwd = "root";
     string databasename = "yourdb";
-
+    
 - build
 
     sh ./build.sh
 - 启动server
-
-    ./server
-
+   ./server
 - 浏览器端
-
     ip:9006
-
 # 个性化运行
 
 ./server [-p port] [-l LOGWrite] [-m TRIGMode] [-o OPT_LINGER] [-s sql_num] [-t thread_num] [-c close_log] [-a actor_model]
@@ -129,9 +123,9 @@ Linux下C++轻量级Web服务器的主要工作：
    
    ![图片](https://user-images.githubusercontent.com/86244913/180148655-e6244b43-e6f0-4799-8684-661c037130db.png)
 
-        并发连接总数：10000
-        访问服务器时间：5s
-        所有访问均成功
+- 并发连接总数：10000
+- 访问服务器时间：5s
+- 所有访问均成功
 
 # 致谢
 
