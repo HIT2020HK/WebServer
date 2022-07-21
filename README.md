@@ -49,7 +49,7 @@ Linux下C++轻量级Web服务器的主要工作：
     // 添加数据
     INSERT INTO user(username, passwd) VALUES('name', 'passwd');
 
-    ## 修改main.cpp中的数据库初始化信息
+    ##修改main.cpp中的数据库初始化信息
     //数据库登录名,密码,库名
     string user = "root";
     string passwd = "root";
@@ -113,15 +113,15 @@ Linux下C++轻量级Web服务器的主要工作：
 在关闭日志后，使用Webbench对服务器进行压力测试，对listenfd和connfd分别采用ET和LT模式，均可实现上万的并发连接，下面列出的是两者组合后的测试结果.
 
         Proactor，LT + LT，25023 QPS
-![图片](https://user-images.githubusercontent.com/86244913/180144660-6116e00a-1d09-4d13-ae74-aecc1ebd6c31.png)
-
-        Proactor，LT + ET，97459 QPS
-
-        Proactor，ET + LT，80498 QPS
-
-        Proactor，ET + ET，92167 QPS
-
-        Reactor，LT + ET，69175 QPS
+        ![图片](https://user-images.githubusercontent.com/86244913/180144660-6116e00a-1d09-4d13-ae74-aecc1ebd6c31.png)
+        Proactor，LT + ET，16876 QPS
+        ![图片](https://user-images.githubusercontent.com/86244913/180145515-a812a5be-2e3e-45dd-ba10-81a935e37123.png)
+        Proactor，ET + LT，17943 QPS
+        ![图片](https://user-images.githubusercontent.com/86244913/180145597-be567ac5-225b-4292-b636-d81c1797a04e.png)
+        Proactor，ET + ET，17428 QPS
+        ![图片](https://user-images.githubusercontent.com/86244913/180145685-99d5a22a-ea7b-4734-95e1-1e341ab0eeb6.png)
+        Reactor，LT + ET，8624 QPS
+        ![图片](https://user-images.githubusercontent.com/86244913/180145777-be056f02-06b9-4509-ba53-34d0f57e5103.png)
 
         并发连接总数：10500
         访问服务器时间：5s
