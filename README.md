@@ -11,7 +11,7 @@ Linux下C++轻量级Web服务器的主要工作：
 
 # 目录
 
-|[框架](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E6%A1%86%E6%9E%B6)|[Demo演示](https://github.com/HIT2020HK/WebServer/blob/web/README.md#demo%E6%BC%94%E7%A4%BA)|[快速运行](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C)|[个性化运行](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E4%B8%AA%E6%80%A7%E5%8C%96%E8%BF%90%E8%A1%8C)  [压力测试](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95)|[致谢](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E8%87%B4%E8%B0%A2)|
+|[框架](#框架)|[Demo演示](https://github.com/HIT2020HK/WebServer/blob/web/README.md#demo%E6%BC%94%E7%A4%BA)|[快速运行](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C)|[个性化运行](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E4%B8%AA%E6%80%A7%E5%8C%96%E8%BF%90%E8%A1%8C)  [压力测试](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95)|[致谢](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E8%87%B4%E8%B0%A2)|
 |:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 
 # 框架
@@ -40,7 +40,7 @@ Linux下C++轻量级Web服务器的主要工作：
         FireFox
 - 测试前已安装MySQL数据库
 
-    ```
+    ```C++
     // 建立yourdb库
     create database yourdb;
     // 创建user表
@@ -54,22 +54,22 @@ Linux下C++轻量级Web服务器的主要工作：
     ```
     
 - 修改main.cpp中的数据库初始化信息
-    ```
+    ```C++
     //数据库登录名,密码,库名
     string user = "root";
     string passwd = "root";
     string databasename = "yourdb";
     ```
 - build
-    ```
+    ```C++
     sh ./build.sh
     ```
 - 启动server
-   ```
+   ```C++
    ./server
    ```
 - 浏览器端
-    ```
+    ```C++
     ip:9006
     ```
 # 个性化运行
