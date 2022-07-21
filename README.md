@@ -72,6 +72,7 @@ Linux下C++轻量级Web服务器的主要工作：
 ./server [-p port] [-l LOGWrite] [-m TRIGMode] [-o OPT_LINGER] [-s sql_num] [-t thread_num] [-c close_log] [-a actor_model]
 
 - -p，自定义端口号
+- 
         默认9006
 - -l，选择日志写入方式，默认同步写入
         0，同步写入
