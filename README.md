@@ -2,11 +2,11 @@
 # WebServer
 
 Linux下C++轻量级Web服务器的主要工作：
-- 使用 线程池 + 非阻塞socket + epoll(ET和LT均实现) + 事件处理(Reactor和模拟Proactor均实现) 的并发模型
-- 使用状态机解析HTTP请求报文，支持解析GET和POST请求
-- 访问服务器数据库实现web端用户注册、登录功能，可以请求服务器图片和视频文件
-- 实现同步/异步日志系统，记录服务器运行状态
-- 经Webbench压力测试可以实现上万的并发连接数据交换
+* 使用 **线程池 + 非阻塞socket + epoll(ET和LT均实现) + 事件处理(Reactor和Proactor均实现)** 的并发模型
+* 使用**状态机**解析HTTP请求报文，支持解析**GET和POST**请求
+* 访问服务器数据库实现web端用户**注册、登录**功能，可以请求服务器**图片和视频文件**
+* 实现**同步/异步日志系统**，记录服务器运行状态
+* 经Webbench压力测试可以实现**上万的并发连接**数据交换
 
 
 # 目录
@@ -20,14 +20,22 @@ Linux下C++轻量级Web服务器的主要工作：
 
 # Demo演示
 
+- 欢迎界面
+![图片](https://user-images.githubusercontent.com/86244913/180174879-1b0d9f7b-bf5d-4d0f-b93f-81c43272c3d1.png)
 
-        注册演示
+- 注册界面
+![图片](https://user-images.githubusercontent.com/86244913/180174802-c772999d-27d0-4738-a9d4-2885a3553b5b.png)
+- 登陆界面
+![图片](https://user-images.githubusercontent.com/86244913/180175048-377397a8-3f30-4bce-92a9-aa4232efa01b.png)
+- 登录成功界面
+![图片](https://user-images.githubusercontent.com/86244913/180175476-76633cc2-dfad-4eaf-926c-c2770e4f9dfc.png)
+- 校训界面
+![图片](https://user-images.githubusercontent.com/86244913/180175607-8c9da003-389b-4961-9fe8-f90f3a6d272b.png)
+- 招生界面
+![图片](https://user-images.githubusercontent.com/86244913/180175690-4a092467-e9b8-43cf-9375-a07068505528.png)
+- 宣传片界面
+![图片](https://user-images.githubusercontent.com/86244913/180175779-6788e33c-acad-437d-b070-c135b4b4c011.png)
 
-        登录演示
-
-        请求图片文件演示(6M)
-
-        请求视频文件演示(39M)
         
 # 快速运行
 - 服务器测试环境
