@@ -3,7 +3,7 @@
 
 Linux下C++轻量级Web服务器的主要工作：
 
-   -使用 线程池 + 非阻塞socket + epoll(ET和LT均实现) + 事件处理(Reactor和模拟Proactor均实现) 的并发模型
+    ·使用 线程池 + 非阻塞socket + epoll(ET和LT均实现) + 事件处理(Reactor和模拟Proactor均实现) 的并发模型
     ·使用状态机解析HTTP请求报文，支持解析GET和POST请求
     ·访问服务器数据库实现web端用户注册、登录功能，可以请求服务器图片和视频文件
     ·实现同步/异步日志系统，记录服务器运行状态
@@ -11,12 +11,12 @@ Linux下C++轻量级Web服务器的主要工作：
 
 
 # 目录
-[# 框架]() 	Demo演示 	压力测试 	更新日志 	源码下载 	快速运行 	个性化运行 	庖丁解牛 	CPP11实现 	致谢
+[框架](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E6%A1%86%E6%9E%B6) 	Demo演示 	压力测试 	更新日志 	源码下载 	快速运行 	个性化运行 	庖丁解牛 	CPP11实现 	致谢
 
 # 框架
-! [This is an image]![frame](https://user-images.githubusercontent.com/86244913/180124295-b56ceddc-03bc-465d-b5b0-15f20484c6d6.jpg)
-（）
-Demo演示
+![frame](https://user-images.githubusercontent.com/86244913/180124295-b56ceddc-03bc-465d-b5b0-15f20484c6d6.jpg)
+
+# Demo演示
 
         注册演示
 
