@@ -21,19 +21,26 @@ Linux下C++轻量级Web服务器的主要工作：
 # Demo演示
 
 - 欢迎界面
+
 ![图片](https://user-images.githubusercontent.com/86244913/180174879-1b0d9f7b-bf5d-4d0f-b93f-81c43272c3d1.png)
 
 - 注册界面
+
 ![图片](https://user-images.githubusercontent.com/86244913/180174802-c772999d-27d0-4738-a9d4-2885a3553b5b.png)
 - 登陆界面
+
 ![图片](https://user-images.githubusercontent.com/86244913/180175048-377397a8-3f30-4bce-92a9-aa4232efa01b.png)
 - 登录成功界面
+
 ![图片](https://user-images.githubusercontent.com/86244913/180175476-76633cc2-dfad-4eaf-926c-c2770e4f9dfc.png)
 - 校训界面
+
 ![图片](https://user-images.githubusercontent.com/86244913/180175607-8c9da003-389b-4961-9fe8-f90f3a6d272b.png)
 - 招生界面
+
 ![图片](https://user-images.githubusercontent.com/86244913/180175690-4a092467-e9b8-43cf-9375-a07068505528.png)
 - 宣传片界面
+
 ![图片](https://user-images.githubusercontent.com/86244913/180175779-6788e33c-acad-437d-b070-c135b4b4c011.png)
 
         
