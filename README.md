@@ -11,7 +11,7 @@ Linux下C++轻量级Web服务器的主要工作：
 
 # 目录
 
-|[框架](#框架)|[Demo演示](https://github.com/HIT2020HK/WebServer/blob/web/README.md#demo%E6%BC%94%E7%A4%BA)|[快速运行](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C)|[个性化运行](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E4%B8%AA%E6%80%A7%E5%8C%96%E8%BF%90%E8%A1%8C)  [压力测试](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95)|[致谢](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E8%87%B4%E8%B0%A2)|
+|[框架](#框架)|[Demo演示](https://github.com/HIT2020HK/WebServer/blob/web/README.md#demo%E6%BC%94%E7%A4%BA)|[快速运行](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C)|[个性化运行](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E4%B8%AA%E6%80%A7%E5%8C%96%E8%BF%90%E8%A1%8C) | [压力测试](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95)|[致谢](https://github.com/HIT2020HK/WebServer/blob/web/README.md#%E8%87%B4%E8%B0%A2)|
 |:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 
 # 框架
@@ -73,7 +73,6 @@ Linux下C++轻量级Web服务器的主要工作：
     ip:9006
     ```
 # 个性化运行
-------
 ```C++
 ./server [-p port] [-l LOGWrite] [-m TRIGMode] [-o OPT_LINGER] [-s sql_num] [-t thread_num] [-c close_log] [-a actor_model]
 ```
