@@ -3,11 +3,11 @@
 
 Linux下C++轻量级Web服务器的主要工作：
 
-    ·使用 线程池 + 非阻塞socket + epoll(ET和LT均实现) + 事件处理(Reactor和模拟Proactor均实现) 的并发模型
-    ·使用状态机解析HTTP请求报文，支持解析GET和POST请求
-    ·访问服务器数据库实现web端用户注册、登录功能，可以请求服务器图片和视频文件
-    ·实现同步/异步日志系统，记录服务器运行状态
-    ·经Webbench压力测试可以实现上万的并发连接数据交换
+    - 使用 线程池 + 非阻塞socket + epoll(ET和LT均实现) + 事件处理(Reactor和模拟Proactor均实现) 的并发模型
+    - 使用状态机解析HTTP请求报文，支持解析GET和POST请求
+    - 访问服务器数据库实现web端用户注册、登录功能，可以请求服务器图片和视频文件
+    - 实现同步/异步日志系统，记录服务器运行状态
+    - 经Webbench压力测试可以实现上万的并发连接数据交换
 
 
 # 目录
@@ -28,7 +28,7 @@ Linux下C++轻量级Web服务器的主要工作：
         
 # 快速运行
 
-    ## 服务器测试环境
+    # #服务器测试环境
         Ubuntu版本18.04
         MySQL版本5.7.38
 
@@ -114,6 +114,7 @@ Linux下C++轻量级Web服务器的主要工作：
 
         Proactor，LT + LT，25023 QPS
         ![图片](https://user-images.githubusercontent.com/86244913/180144660-6116e00a-1d09-4d13-ae74-aecc1ebd6c31.png)
+        
         Proactor，LT + ET，16876 QPS
         ![图片](https://user-images.githubusercontent.com/86244913/180145515-a812a5be-2e3e-45dd-ba10-81a935e37123.png)
         Proactor，ET + LT，17943 QPS
